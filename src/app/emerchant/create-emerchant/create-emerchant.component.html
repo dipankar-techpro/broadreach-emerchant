@@ -1,0 +1,211 @@
+<section>
+  <div class="row text-left">
+    <div class="col-12">
+      <div class="content-header">Create eMerchant</div>
+    </div>
+    <!--Vertical pills Starts-->
+    <div class="col-md-12 col-lg-12">
+      <div class="d-flex mt-4">
+        <ul ngbNav #vernav="ngbNav" [(activeId)]="vActive" class="nav-pills" orientation="vertical">
+          <li ngbNavItem="top">
+            <a ngbNavLink><i class="ft-settings mr-2"></i>General</a>
+            <ng-template ngbNavContent>
+              <div class="row mb-3">
+                <div class="col-sm-2 mb-3 mb-sm-0">
+                  <div class="profPic-view square d-inline-block"><img src="assets/img/users/user_Icon.png"></div>
+                </div>
+                <div class="col-sm-10">
+                  <div class="cus-file btn btn-md btn-primary mr-2">
+                    Change Photo
+                    <input type="file" name="file" />
+                  </div>
+                  <button class="btn btn-md btn-secondary custom"> Reset</button>
+                  <div class="mt-1">
+                    <p>Allowed JPG, GIF or PNG. Max size of 800kB</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="controls">
+                      <label for="">Company Name</label>
+                      <input type="text" id="" class="form-control" placeholder="Company Name" value="" required
+                        aria-invalid="false">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="controls">
+                      <label for="">Attention Name</label>
+                      <input type="text" id="" class="form-control" placeholder="Attention Name" value="" required
+                        aria-invalid="false">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <label for="">E-MAIL</label>
+                  <fieldset>
+                    <div class="input-group">
+                      <input type="email" class="form-control border-right-0" placeholder="E-MAIL" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                        <a class="input-group-text bg-transparent text-primary border-left-0" id="basic-addon2">Verify</a>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <div class="controls">
+                      <label for="">Phone Number</label>
+                      <input type="number" id="" class="form-control" placeholder="Phone Number" value="" required
+                        aria-invalid="false">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <div class="controls">
+                      <label for="">Phone Ext</label>
+                      <input type="text" id="" class="form-control" placeholder="" value="" required
+                        aria-invalid="false">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="controls">
+                      <label for="">Fax number</label>
+                      <input type="text" id="" class="form-control" placeholder="Fax number" value="" required
+                        aria-invalid="false">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </li>
+          <li ngbNavItem="Info">
+            <a ngbNavLink><i class="ft-info mr-2"></i>Info</a>
+            <ng-template ngbNavContent>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="controls">
+                      <label for="">Address 1</label>
+                      <input type="text" id="" class="form-control" placeholder="" value="" required
+                        aria-invalid="false">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="controls">
+                      <label for="">Address 2</label>
+                      <input type="text" id="" class="form-control" placeholder="" value="" required
+                        aria-invalid="false">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="controls">
+                      <label for="">Country</label>
+                      <ng-select [items]="cities" bindLabel="name" placeholder="Select city" [(ngModel)]="selectedCity">
+                      </ng-select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="controls">
+                      <label for="">Postal Code</label>
+                      <input type="text" id="" class="form-control" placeholder="" value="" required
+                        aria-invalid="false">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </li>
+          <li ngbNavItem="Account">
+            <a ngbNavLink><i class="ft-shopping-bag mr-2"></i>Account</a>
+            <ng-template ngbNavContent>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="controls">
+                      <label for="">Bank Name</label>
+                      <input type="text" id="" class="form-control" placeholder="Bank Name" value="" required
+                        aria-invalid="false">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="controls">
+                      <label for="">Account Number</label>
+                      <input type="text" id="" class="form-control" placeholder="Account Number" value="" required
+                        aria-invalid="false">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="controls">
+                      <label for="">Branch details</label>
+                      <input type="text" id="" class="form-control" placeholder="Branch details" value="" required
+                        aria-invalid="false">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="controls">
+                      <label for="">tax id</label>
+                      <input type="text" id="" class="form-control" placeholder="tax id" value="" required
+                        aria-invalid="false">
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </ng-template>
+          </li>
+          <li ngbNavItem="Password">
+            <a ngbNavLink><i class="ft-lock mr-2"></i>Password</a>
+            <ng-template ngbNavContent>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="controls">
+                      <label for="">New password</label>
+                      <input type="password" id="" class="form-control" placeholder="New password" value="" required
+                        aria-invalid="false">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="controls">
+                      <label for="">Confirm new Password</label>
+                      <input type="password" id="" class="form-control" placeholder="Confirm new Password" value="" required
+                        aria-invalid="false">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </li>
+        </ul>
+
+        <div [ngbNavOutlet]="vernav" class="ml-4 card mt-0 p-3 w-75"></div>
+      </div>
+      <div class="text-sm-right">
+        <button class="btn btn-primary custom">Save</button>
+      </div>
+      
+    </div>
+    <!--Vertical pills Ends-->
+  </div>
+</section>

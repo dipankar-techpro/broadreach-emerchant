@@ -1,0 +1,131 @@
+<section id="ngx-datatable-filter">
+    <div class="row">
+      <div class="col-12">
+        <div class="content-header">eMarchent List</div>
+    </div>
+    <div class="col-12">
+      <!-- Filter starts -->
+      <div class="users-list-filter">
+        <form>
+          <div class="row rounded py-2 mb-2 mx-n2 naked-form">
+            <div class="col-12 col-sm-6 col-lg-3">
+              <label for="users-list-verified">Verified</label>
+              <ng-select [items]="verify" bindLabel="name" placeholder="Verified or not" [(ngModel)]="selectedCity">
+              </ng-select>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+              <label for="users-list-role">Role</label>
+              <ng-select [items]="role" bindLabel="name" placeholder="Select Role" [(ngModel)]="selectedCity">
+              </ng-select>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+              <label for="users-list-status">Status</label>
+              <ng-select [items]="status" bindLabel="name" placeholder="Select Status" [(ngModel)]="selectedCity">
+              </ng-select>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-2 d-flex align-items-center offset-lg-1">
+              <button type="reset" class="btn btn-secondary btn-block users-list-clear glow mb-0">
+                Clear
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Filter ends -->
+    </div>
+      <div class="col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <!-- ngx-datatable-filter -->
+              <fieldset class="form-group">
+                <div class="row">
+                  
+                <div class="col-sm-4">
+                  <label for="ngx-filter-ref" class="d-block">
+                    <input id="ngx-filter-ref" class="form-control form-control-sm"
+                      type="text" (keyup)="filterUpdate($event)" />
+                  </label>
+                </div>
+                <div class="col-sm-8 text-sm-right">
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-custom">Copy</button>
+                      <button type="button" class="btn btn-custom">CSV</button>
+                      <button type="button" class="btn btn-custom">Excel</button>
+                      <button type="button" class="btn btn-custom">PDF</button>
+                      <button type="button" class="btn btn-custom">Print</button>
+                    </div>
+              </div>
+                </div>
+              </fieldset>
+
+              <table class="table text-left m-0">
+                <thead>
+                  <tr>
+                    <th>Company name</th>
+                    <th>Attention Name</th>
+                    <th>Email</th>
+                    <th>Phone No.</th>
+                    <th>Tax Id</th>
+                    <th>Fax No.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a routerLink="/emerchant/emerchant-detail" class="d-flex align-items-center"><div class="profPic-view d-inline-block mr-2"><img src="assets/img/users/user_Icon.png"></div>ABC essential Limited</a>  </td>
+                    <td>
+                      eMar_roger21 
+                    </td>
+                    <td>abcpublic@abc.com </td>
+                    <td>+1-598-75632</td>
+                    <td>Tax001 </td>
+                    <td>
+                      +1-636-24672 
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a routerLink="/emerchant/emerchant-detail" class="d-flex align-items-center"><div class="profPic-view d-inline-block mr-2"><img src="assets/img/users/user_Icon.png"></div>ABC essential Limited</a>  </td>
+                    <td>
+                      eMar_roger21 
+                    </td>
+                    <td>abcpublic@abc.com </td>
+                    <td>+1-598-75632</td>
+                    <td>Tax001 </td>
+                    <td>
+                      +1-636-24672 
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a routerLink="/emerchant/emerchant-detail" class="d-flex align-items-center"><div class="profPic-view d-inline-block mr-2"><img src="assets/img/users/user_Icon.png"></div>ABC essential Limited</a>  </td>
+                    <td>
+                      eMar_roger21 
+                    </td>
+                    <td>abcpublic@abc.com </td>
+                    <td>+1-598-75632</td>
+                    <td>Tax001 </td>
+                    <td>
+                      +1-636-24672 
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <label>Show
+                <select name="users-list-select"
+                  class="form-control form-control-sm d-inline-block width-100 p-right-25 pl-4 mx-1"
+                  (click)="updateLimit($event)">
+                  <option value="10">10</option>
+                  <option value="25">25</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                </select>
+                entries</label>
+              <!-- ngx-datatable-filter -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

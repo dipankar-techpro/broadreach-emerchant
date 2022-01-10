@@ -1,0 +1,188 @@
+<section>
+    <div class="row text-left">
+      <div class="col-12">
+        <div class="content-header">User Profile</div>
+      </div>
+      <!--Vertical pills Starts-->
+      <div class="col-md-12 col-lg-12">
+        <div class="d-flex mt-4">
+          <ul ngbNav #vernav="ngbNav" [(activeId)]="vActive" class="nav-pills" orientation="vertical">
+            <li ngbNavItem="top">
+              <a ngbNavLink><i class="ft-settings mr-2"></i>General</a>
+              <ng-template ngbNavContent>
+                <div class="row mb-3">
+                  <div class="col-sm-2 mb-3 mb-sm-0">
+                    <div class="profPic-view square d-inline-block"><img src="assets/img/profile/prof.png"></div>
+                  </div>
+                  <div class="col-sm-10">
+                    <div class="cus-file btn btn-md btn-primary mr-2">
+                      Change Photo
+                      <input type="file" name="file" />
+                    </div>
+                    <button class="btn btn-md btn-secondary custom"> Reset</button>
+                    <div class="mt-1">
+                      <p>Allowed JPG, GIF or PNG. Max size of 800kB</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <div class="controls">
+                        <label for="">Username</label>
+                        <input type="text" id="" class="form-control" placeholder="Username" value="melisha70" required
+                          aria-invalid="false">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <div class="controls">
+                        <label for="">NAME</label>
+                        <input type="text" id="" class="form-control" placeholder="Name" value="Melisha Adams" required
+                          aria-invalid="false">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="">E-MAIL</label>
+                    <fieldset>
+                      <div class="input-group">
+                        <input type="email" class="form-control border-right-0" placeholder="E-MAIL" value="Adams70mel@gmail.com" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <a class="input-group-text bg-transparent text-primary border-left-0" id="basic-addon2">Verify</a>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <div class="controls">
+                        <label for="">Company</label>
+                        <input type="text" id="" class="form-control" placeholder="Company" value="ABC Ltd." required
+                          aria-invalid="false">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </li>
+            <li ngbNavItem="Info">
+              <a ngbNavLink><i class="ft-info mr-2"></i>Info</a>
+              <ng-template ngbNavContent>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <div class="controls">
+                        <label for="">Address 1</label>
+                        <input type="text" id="" class="form-control" placeholder="" value="Lorem Ipsum is simply dummy text of the printing and typesetting industry." required
+                          aria-invalid="false">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <div class="controls">
+                        <label for="">Address 2</label>
+                        <input type="text" id="" class="form-control" placeholder="" value="Lorem Ipsum is simply dummy text of the printing and typesetting industry." required
+                          aria-invalid="false">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <div class="controls">
+                        <label for="">City</label>
+                        <ng-select [items]="cities" bindLabel="name" placeholder="Select city" [(ngModel)]="selectedCity">
+                        </ng-select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <div class="controls">
+                        <label for="">Postal Code</label>
+                        <input type="text" id="" class="form-control" placeholder="" value="021" required
+                          aria-invalid="false">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </li>
+            <li ngbNavItem="Account">
+              <a ngbNavLink><i class="ft-bell mr-2"></i>Notification</a>
+              <ng-template ngbNavContent>
+                <div class="row">
+                    <div class="col-lg-12">
+                        
+                        <ngb-alert type="light-secondary" class="bg-light-secondary mb-3" [dismissible]="true">
+                          <h4 class="alert-heading mb-2">Good Morning!</h4>
+                          <p>Aww yeah, you successfully read this important alert message. This example text is going to run a
+                            bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                          <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
+                          </p>
+                        </ngb-alert>
+                      </div>
+                      <div class="col-lg-12">
+                        
+                        <ngb-alert type="light-danger" class="bg-light-danger mb-0" [dismissible]="true">
+                          <h4 class="alert-heading mb-2">Good Morning!</h4>
+                          <p>Aww yeah, you successfully read this important alert message. This example text is going to run a
+                            bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                          <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
+                          </p>
+                        </ngb-alert>
+                      </div>
+                      
+                      
+                  
+                </div>
+              </ng-template>
+            </li>
+            <li ngbNavItem="Password">
+              <a ngbNavLink><i class="ft-lock mr-2"></i>Password</a>
+              <ng-template ngbNavContent>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                          <div class="controls">
+                            <label for="">Old password</label>
+                            <input type="password" id="" class="form-control" placeholder="Old password" value="" required
+                              aria-invalid="false">
+                          </div>
+                        </div>
+                      </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <div class="controls">
+                        <label for="">New password</label>
+                        <input type="password" id="" class="form-control" placeholder="New password" value="" required
+                          aria-invalid="false">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <div class="controls">
+                        <label for="">Confirm new Password</label>
+                        <input type="password" id="" class="form-control" placeholder="Confirm new Password" value="" required
+                          aria-invalid="false">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </li>
+          </ul>
+  
+          <div [ngbNavOutlet]="vernav" class="ml-4 card mt-0 p-3 w-75"></div>
+        </div>
+        <div class="text-sm-right">
+          <button class="btn btn-primary custom">Save Changes</button>
+        </div>
+        
+      </div>
+      <!--Vertical pills Ends-->
+    </div>
+  </section>
