@@ -24,6 +24,20 @@ export const ROUTES: RouteInfo[] = [
     ]
   },
   {
+    path: '', title: 'Manage Shipment', icon: 'ft-users', class: 'has-sub', badge: '', badgeClass: '', isExternalLink: false,
+    submenu: [
+      { 
+        path: '', title: 'Create Shipment', icon: 'ft-arrow-right submenu-icon', class: 'has-sub', badge: '', badgeClass: '', isExternalLink: false, 
+        submenu: [
+          { path: '/manage-shipment/manual', title: 'Manual', icon: 'ft-arrow-right submenu-icon', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+          { path: '/manage-shipment/import-csv', title: 'Import CSV', icon: 'ft-arrow-right submenu-icon', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+        ] 
+      },
+      { path: '/manage-shipment/shipment-history', title: 'Shipment History', icon: 'ft-arrow-right submenu-icon', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+      { path: '/manage-shipment/track-shipment', title: 'Track Shipment', icon: 'ft-arrow-right submenu-icon', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },      
+    ]
+  },
+  {
     path: '/profile', title: 'Profile', icon: 'ft-user', class: '', badge: '', badgeClass: 'badge badge-pill badge-danger float-right mr-1 mt-1', isExternalLink: false, submenu: []
   },
 ];

@@ -1,0 +1,24 @@
+.my-drop-zone { 
+    border: dotted 3px lightgray; 
+    background-color: #f5f7fa !important;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nv-file-over { border: dotted 3px red; } /* Default class applied to drop zones on over */
+.another-file-over-class { border: dotted 3px green; }
+
+.cus-file {
+    position: relative;
+    overflow: hidden;
+  }
+.cus-file input {
+    position: absolute;
+    font-size: 50px;
+    opacity: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }

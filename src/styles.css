@@ -195,6 +195,27 @@ div.dataTables_wrapper div.dataTables_filter{
 	color: #fff;
 	padding: 10px 30px;
 } */
+ul.steps-indicator li.current .step-indicator{
+	border: 2px solid #994B2B !important;
+    color: #994B2B !important;
+}
+ul.steps-indicator li.current:after{
+	background-color: #994B2B !important;
+   }
+   ul.steps-indicator li.current .label{
+	color: #994B2B !important;
+   }
+   ul.steps-indicator li.done .step-indicator{
+	border: 2px solid #994B2B !important;
+    color: #fff !important;
+	background-color:#994B2B ;
+}
+ul.steps-indicator li.done:after{
+	background-color: #994B2B !important;
+   }
+  ul.steps-indicator li.done .label{
+	color: #fff !important;
+   }
 @media screen and (max-width:590px) {
 	.login-page::after{
 		width: 100%;

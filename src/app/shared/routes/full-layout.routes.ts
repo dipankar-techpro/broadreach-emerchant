@@ -16,6 +16,10 @@ export const Full_ROUTES: Routes = [
     loadChildren: () => import('../../emerchant/emerchant.module').then(m => m.EmerchantModule)
   },
   {
+    path: 'manage-shipment',
+    loadChildren: () => import('../../manage-shipment/manage-shipment.module').then(m => m.ManageShipmentModule)
+  },
+  {
     path: 'profile',
     loadChildren: () => import('../../profile/profile.module').then(m => m.ProfileModule)
   },
