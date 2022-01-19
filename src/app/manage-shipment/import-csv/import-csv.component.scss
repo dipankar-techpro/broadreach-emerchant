@@ -22,3 +22,22 @@
     top: 0;
     bottom: 0;
   }
+  .sort-link{
+    display: flex;
+    align-items: center;
+}
+.sort-link i{
+    padding: 7px;
+}
+.sort-link.sorted i{
+    transform: rotate(180deg);
+}
+.srch-div input{
+    padding-left: 40px;
+}
+.srch-div .srch-icon{
+    position: absolute;
+    padding:14px 10px;
+}
+.link-cell a{ color:#01ABAA;}
+.link-cell a:hover{ color:#994B2B;}

@@ -14,8 +14,11 @@
                     <div class="card-body">
                         <div class="row align-items-center mb-3">
                             <div class="col-sm-12">
-                                <p>This example uploads a multiple files using dropzone js library. Using this method, user gets an option to select the files using a button instead dropping all the files
-                                    after selected from the folders. You have to define dropzone and previewsContainer elements to show preview thumbnails. Also set clickable to match the button's id 
+                                <p>This example uploads a multiple files using dropzone js library. Using this method,
+                                    user gets an option to select the files using a button instead dropping all the
+                                    files
+                                    after selected from the folders. You have to define dropzone and previewsContainer
+                                    elements to show preview thumbnails. Also set clickable to match the button's id
                                     for button to work as file selector.</p>
                             </div>
                             <div class="col-lg-6">
@@ -23,28 +26,108 @@
                                     Click to select files
                                     <input type="file" name="file" ng2FileSelect [uploader]="uploader" />
                                     <span class="custom-file-control"></span>
-                                  </div>
-                                  <div class="mb-1">
+                                </div>
+                                <div class="mb-1">
                                     <a href="#" class="btn-link text-primary py-2 d-inline-block">CSV Format & Guide</a>
-                                  </div>
-                                
+                                </div>
+
                             </div>
                             <div class="col-md-12">
-                                <div ng2FileDrop [ngClass]="{'nv-file-over': hasBaseDropZoneOver}" (fileOver)="fileOverBase($event)"
-                                  [uploader]="uploader" class="py-5 mb-3 text-center text-uppercase grey my-drop-zone">
-                                  <div class="font-medium-5">
-                                    <p>Drop Files Here To Upload</p>
-                                    <img src="../../../assets/img/icons/Vector.svg">
-                                  </div>
+                                <div ng2FileDrop [ngClass]="{'nv-file-over': hasBaseDropZoneOver}"
+                                    (fileOver)="fileOverBase($event)" [uploader]="uploader"
+                                    class="py-5 mb-3 text-center text-uppercase grey my-drop-zone">
+                                    <div class="font-medium-5">
+                                        <p>Drop Files Here To Upload</p>
+                                        <img src="../../../assets/img/shipment/Vector.svg">
+                                    </div>
                                 </div>
-                                
-                              </div>
+
+                            </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
             <!-- Card data ends -->
         </div>
+        <div class="col-12">
+            <!-- Card data starts -->
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th><a class="sort-link">Tracking Number<i class="ft-chevron-down"></i></a></th>
+                                        <th><a class="sort-link">Service Type<i class="ft-chevron-down"></i></a></th>
+                                        <th><a class="sort-link sorted" >Origin<i class="ft-chevron-down"></i></a></th>
+                                        <th><a class="sort-link">Destination<i class="ft-chevron-down"></i></a></th>
+                                        <th><a class="sort-link">Weight<i class="ft-chevron-down"></i></a></th>
+                                        <th><a class="sort-link">Status<i class="ft-chevron-down"></i></a></th>
+                                        <th><a class="sort-link">Created Date<br> 
+                                            &amp; Time<i class="ft-chevron-down"></i></a></th>
+                                        <th class="text-center">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>BR20211119</td>
+                                        <td>Standard</td>
+                                        <td>Utah</td>
+                                        <td>Toranto, ON</td>
+                                        <td>1.5 lbs</td>
+                                        <td>Out for delivery</td>
+                                        <td>11/19/2021  10:00</td>
+                                        <td class="link-cell text-center"><a routerLink="/manage-shipment/shipment-detail" class="px-1"><i class="fa fa-eye"></i></a><a routerLink="/manage-shipment/edit-shipment" class="px-1"><i class="fa fa-pencil"></i></a><a href="#" class="px-1"><i class="fa fa-trash"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>BR20211119</td>
+                                        <td>Standard</td>
+                                        <td>Utah</td>
+                                        <td>Toranto, ON</td>
+                                        <td>1.5 lbs</td>
+                                        <td>Out for delivery</td>
+                                        <td>11/19/2021  10:00</td>
+                                        <td class="link-cell text-center"><a routerLink="/manage-shipment/shipment-detail" class="px-1"><i class="fa fa-eye"></i></a><a routerLink="/manage-shipment/edit-shipment" class="px-1"><i class="fa fa-pencil"></i></a><a href="#" class="px-1"><i class="fa fa-trash"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>BR20211119</td>
+                                        <td>Standard</td>
+                                        <td>Utah</td>
+                                        <td>Toranto, ON</td>
+                                        <td>1.5 lbs</td>
+                                        <td>Out for delivery</td>
+                                        <td>11/19/2021  10:00</td>
+                                        <td class="link-cell text-center"><a routerLink="/manage-shipment/shipment-detail" class="px-1"><i class="fa fa-eye"></i></a><a routerLink="/manage-shipment/edit-shipment" class="px-1"><i class="fa fa-pencil"></i></a><a href="#" class="px-1"><i class="fa fa-trash"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>BR20211119</td>
+                                        <td>Standard</td>
+                                        <td>Utah</td>
+                                        <td>Toranto, ON</td>
+                                        <td>1.5 lbs</td>
+                                        <td>Out for delivery</td>
+                                        <td>11/19/2021  10:00</td>
+                                        <td class="link-cell text-center"><a routerLink="/manage-shipment/shipment-detail" class="px-1"><i class="fa fa-eye"></i></a><a routerLink="/manage-shipment/edit-shipment" class="px-1"><i class="fa fa-pencil"></i></a><a href="#" class="px-1"><i class="fa fa-trash"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>BR20211119</td>
+                                        <td>Standard</td>
+                                        <td>Utah</td>
+                                        <td>Toranto, ON</td>
+                                        <td>1.5 lbs</td>
+                                        <td>Out for delivery</td>
+                                        <td>11/19/2021  10:00</td>
+                                        <td class="link-cell text-center"><a routerLink="/manage-shipment/shipment-detail" class="px-1"><i class="fa fa-eye"></i></a><a routerLink="/manage-shipment/edit-shipment" class="px-1"><i class="fa fa-pencil"></i></a><a href="#" class="px-1"><i class="fa fa-trash"></i></a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
