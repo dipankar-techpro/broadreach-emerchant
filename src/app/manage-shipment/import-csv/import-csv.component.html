@@ -1,13 +1,19 @@
 <section class="shipment-Import">
     <!-- Media object starts -->
-    <div class="row">
-        <div class="col-12">
+    <div class="row align-items-center">
+        <div class="col-10">
             <div class="content-header mb-3">Import CSV</div>
         </div>
-
+        <div class="col-2 text-right">
+            <button type="button" class="btn btn-link" (click)="isCollapsed = !isCollapsed"
+                [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+          <i class="ft-chevron-up"></i>
+        </button>
+        </div>
     </div>
+
     <div class="row">
-        <div class="col-12">
+        <div class="col-12" id="collapseExample" [ngbCollapse]="isCollapsed">
             <!-- Card data starts -->
             <div class="card">
                 <div class="card-content">
@@ -59,14 +65,14 @@
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
-                                        <th><a class="sort-link">Tracking Number<i class="ft-chevron-down"></i></a></th>
-                                        <th><a class="sort-link">Service Type<i class="ft-chevron-down"></i></a></th>
-                                        <th><a class="sort-link sorted" >Origin<i class="ft-chevron-down"></i></a></th>
-                                        <th><a class="sort-link">Destination<i class="ft-chevron-down"></i></a></th>
-                                        <th><a class="sort-link">Weight<i class="ft-chevron-down"></i></a></th>
-                                        <th><a class="sort-link">Status<i class="ft-chevron-down"></i></a></th>
-                                        <th><a class="sort-link">Created Date<br> 
-                                            &amp; Time<i class="ft-chevron-down"></i></a></th>
+                                        <th><div class="d-flex align-items-center">Tracking Number<a class="sort-link"><i class="ft-chevron-down"></i></a><a class="sort-link d-none"><i class="ft-chevron-up"></i></a></div></th>
+                                        <th><div class="d-flex align-items-center">Service Type<a class="sort-link"><i class="ft-chevron-down"></i></a><a class="sort-link d-none"><i class="ft-chevron-up"></i></a></div></th>
+                                        <th><div class="d-flex align-items-center">Origin<a class="sort-link"><i class="ft-chevron-down"></i></a><a class="sort-link d-none"><i class="ft-chevron-up"></i></a></div></th>
+                                        <th><div class="d-flex align-items-center">Destination<a class="sort-link"><i class="ft-chevron-down"></i></a><a class="sort-link d-none"><i class="ft-chevron-up"></i></a></div></th>
+                                        <th><div class="d-flex align-items-center">Weight<a class="sort-link"><i class="ft-chevron-down"></i></a><a class="sort-link d-none"><i class="ft-chevron-up"></i></a></div></th>
+                                        <th><div class="d-flex align-items-center">Status<a class="sort-link"><i class="ft-chevron-down"></i></a><a class="sort-link d-none"><i class="ft-chevron-up"></i></a></div></th>
+                                        <th><div class="d-flex align-items-center">Created Date<br> 
+                                            &amp; Time<a class="sort-link "><i class="ft-chevron-down"></i></a><a class="sort-link d-none"><i class="ft-chevron-up"></i></a></div></th>
                                         <th class="text-center">Actions</th>
                                     </tr>
                                 </thead>
@@ -79,7 +85,7 @@
                                         <td>1.5 lbs</td>
                                         <td>Out for delivery</td>
                                         <td>11/19/2021  10:00</td>
-                                        <td class="link-cell text-center"><a routerLink="/manage-shipment/shipment-detail" class="px-1"><i class="fa fa-eye"></i></a><a routerLink="/manage-shipment/edit-shipment" class="px-1"><i class="fa fa-pencil"></i></a><a href="#" class="px-1"><i class="fa fa-trash"></i></a></td>
+                                        <td class="link-cell text-center"><a routerLink="/manage-shipment/csv-detail-view" class="px-1"><i class="fa fa-eye"></i></a><a routerLink="/manage-shipment/csv-edit" class="px-1"><i class="fa fa-pencil"></i></a><a href="#" class="px-1"><i class="fa fa-trash"></i></a></td>
                                     </tr>
                                     <tr>
                                         <td>BR20211119</td>
@@ -89,7 +95,7 @@
                                         <td>1.5 lbs</td>
                                         <td>Out for delivery</td>
                                         <td>11/19/2021  10:00</td>
-                                        <td class="link-cell text-center"><a routerLink="/manage-shipment/shipment-detail" class="px-1"><i class="fa fa-eye"></i></a><a routerLink="/manage-shipment/edit-shipment" class="px-1"><i class="fa fa-pencil"></i></a><a href="#" class="px-1"><i class="fa fa-trash"></i></a></td>
+                                        <td class="link-cell text-center"><a routerLink="/manage-shipment/csv-detail-view" class="px-1"><i class="fa fa-eye"></i></a><a routerLink="/manage-shipment/csv-edit" class="px-1"><i class="fa fa-pencil"></i></a><a href="#" class="px-1"><i class="fa fa-trash"></i></a></td>
                                     </tr>
                                     <tr>
                                         <td>BR20211119</td>
@@ -99,7 +105,7 @@
                                         <td>1.5 lbs</td>
                                         <td>Out for delivery</td>
                                         <td>11/19/2021  10:00</td>
-                                        <td class="link-cell text-center"><a routerLink="/manage-shipment/shipment-detail" class="px-1"><i class="fa fa-eye"></i></a><a routerLink="/manage-shipment/edit-shipment" class="px-1"><i class="fa fa-pencil"></i></a><a href="#" class="px-1"><i class="fa fa-trash"></i></a></td>
+                                        <td class="link-cell text-center"><a routerLink="/manage-shipment/csv-detail-view" class="px-1"><i class="fa fa-eye"></i></a><a routerLink="/manage-shipment/csv-edit" class="px-1"><i class="fa fa-pencil"></i></a><a href="#" class="px-1"><i class="fa fa-trash"></i></a></td>
                                     </tr>
                                     <tr>
                                         <td>BR20211119</td>
@@ -109,7 +115,7 @@
                                         <td>1.5 lbs</td>
                                         <td>Out for delivery</td>
                                         <td>11/19/2021  10:00</td>
-                                        <td class="link-cell text-center"><a routerLink="/manage-shipment/shipment-detail" class="px-1"><i class="fa fa-eye"></i></a><a routerLink="/manage-shipment/edit-shipment" class="px-1"><i class="fa fa-pencil"></i></a><a href="#" class="px-1"><i class="fa fa-trash"></i></a></td>
+                                        <td class="link-cell text-center"><a routerLink="/manage-shipment/csv-detail-view" class="px-1"><i class="fa fa-eye"></i></a><a routerLink="/manage-shipment/csv-edit" class="px-1"><i class="fa fa-pencil"></i></a><a href="#" class="px-1"><i class="fa fa-trash"></i></a></td>
                                     </tr>
                                     <tr>
                                         <td>BR20211119</td>
@@ -119,7 +125,7 @@
                                         <td>1.5 lbs</td>
                                         <td>Out for delivery</td>
                                         <td>11/19/2021  10:00</td>
-                                        <td class="link-cell text-center"><a routerLink="/manage-shipment/shipment-detail" class="px-1"><i class="fa fa-eye"></i></a><a routerLink="/manage-shipment/edit-shipment" class="px-1"><i class="fa fa-pencil"></i></a><a href="#" class="px-1"><i class="fa fa-trash"></i></a></td>
+                                        <td class="link-cell text-center"><a routerLink="/manage-shipment/csv-detail-view" class="px-1"><i class="fa fa-eye"></i></a><a routerLink="/manage-shipment/csv-edit" class="px-1"><i class="fa fa-pencil"></i></a><a href="#" class="px-1"><i class="fa fa-trash"></i></a></td>
                                     </tr>
                                 </tbody>
                             </table>

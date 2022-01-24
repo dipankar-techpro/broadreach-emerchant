@@ -9,6 +9,7 @@ const URL = 'https://evening-anchorage-3159.herokuapp.com/api/';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ImportCsvComponent implements OnInit {
+  isCollapsed = true;
   uploader: FileUploader = new FileUploader({
     url: URL,
     isHTML5: true

@@ -1,0 +1,366 @@
+<section class="shipment-view">
+    <!-- Media object starts -->
+    <div class="row">
+        <div class="col-12">
+            <div class="content-header mb-3">Shipment Edit</div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <!-- Card data starts -->
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-body">
+                        <div class="row align-items-center mb-3">
+                            <div class="col-sm-8">
+                                <h5 class="text-primary mb-0">Customer Order</h5>
+                            </div>
+                           
+                        </div>
+                        <div class='row'>
+                            <div class='col-12'>
+                                
+                                <div class="row">
+                                    <div class='col-12 col-sm-6'>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="orderNumber">Order
+                                                Number*</label>
+                                            <input class="form-control input-md" name="orderNumber" type="text">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class='col-12 col-sm-6'>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="trackingNumber">Original Tracking
+                                                Number*</label>
+                                            <input class="form-control input-md" name="trackingNumber" type="text">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class='col-12 col-sm-6'>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="orderNumber">Origin</label>
+                                            <ng-select [items]="cities" bindLabel="name"
+                                                placeholder="Select Origin">
+                                            </ng-select>
+
+                                        </div>
+                                    </div>
+                                    <div class='col-12 col-sm-6'>
+                                        <div class="form-group">
+                                            <label class="form-control-label"
+                                                for="trackingNumber">Destination</label>
+                                            <ng-select [items]="cities" bindLabel="name"
+                                                placeholder="Select Destination">
+                                            </ng-select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class='col-12 col-sm-6'>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="orderNumber">Service
+                                                Type*</label>
+                                            <input class="form-control input-md" name="orderNumber" type="text">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class='col-12 col-sm-6'>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="trackingNumber">Created
+                                                Date</label>
+                                            <form>
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <input class="form-control" placeholder="yyyy-mm-dd"
+                                                            name="dp" [(ngModel)]="popupModel" ngbDatepicker
+                                                            #d2="ngbDatepicker">
+                                                        <div class="input-group-append">
+                                                            <div class="input-group-text" (click)="d2.toggle()">
+                                                                <i class="fa fa-calendar"
+                                                                    style="cursor: pointer;"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class='col-12 col-sm-6'>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="email">Created Time</label>
+                                            <form>
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <input class="form-control" placeholder="Select Time"
+                                                            name="dp">
+                                                        <!-- <ngb-timepicker [(ngModel)]="time"></ngb-timepicker> -->
+                                                        <div class="input-group-append">
+                                                            <div class="input-group-text">
+                                                                <i class="fa fa-clock-o"
+                                                                    style="cursor: pointer;"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card data ends -->
+        </div>
+        <div class="col-12">
+            <!-- Card data starts -->
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-body">
+                        <div class="row align-items-center mb-3">
+                            <div class="col-sm-12">
+                                <h5 class="text-primary mb-0">Customer Informations</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="row">
+                                    <div class='col-12 col-sm-6'>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="orderNumber">Customer
+                                                Name*</label>
+                                            <input class="form-control input-md" name="orderNumber" type="text">
+                                           
+                                        </div>
+                                    </div>
+                                    <div class='col-12 col-sm-6'>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="trackingNumber">Address
+                                                1*</label>
+                                            <input class="form-control input-md" name="trackingNumber" type="text">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class='col-12 col-sm-6'>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="orderNumber">Address 2</label>
+                                            <input class="form-control input-md" name="orderNumber" type="text">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class='col-12 col-sm-6'>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="trackingNumber">Address 3</label>
+                                            <input class="form-control input-md" name="trackingNumber" type="text">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class='col-12 col-sm-6'>
+                                                <div class="form-group">
+                                                    <label class="form-control-label" for="orderNumber">Address
+                                                        3</label>
+                                                    <ng-select [items]="cities" bindLabel="name"
+                                                        placeholder="Select Destination">
+                                                    </ng-select>
+                                                </div>
+                                            </div>
+                                            <div class='col-12 col-sm-6'>
+                                                <div class="form-group">
+                                                    <label class="form-control-label"
+                                                        for="trackingNumber">City*</label>
+                                                    <ng-select [items]="cities" bindLabel="name"
+                                                        placeholder="Select Destination">
+                                                    </ng-select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class='col-12 col-sm-6'>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="orderNumber">State</label>
+                                            <ng-select [items]="cities" bindLabel="name"
+                                                placeholder="Select Destination">
+                                            </ng-select>
+                                        </div>
+                                    </div>
+                                    <div class='col-12 col-sm-6'>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="trackingNumber">Zip Code*</label>
+                                            <input class="form-control input-md"  name="trackingNumber" type="text">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class='col-12 col-sm-6'>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="orderNumber">Phone No*</label>
+                                            <input class="form-control input-md" name="orderNumber" type="text">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class='col-12 col-sm-6'>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="trackingNumber">Email*</label>
+                                            <input class="form-control input-md" name="trackingNumber" type="text">
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card data ends -->
+        </div>
+        <div class="col-12">
+            <!-- Card data starts -->
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-body">
+                        <div class="row align-items-center mb-3">
+                            <div class="col-sm-12">
+                                <h5 class="text-primary mb-0">Product Details</h5>
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-sm-12'>
+                                <div class="row">
+                                    <div class='col-12 col-sm-6'>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="orderNumber">Sku*</label>
+                                            <input class="form-control input-md" name="orderNumber" type="text">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class='col-12 col-sm-6'>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="trackingNumber">Product
+                                                Name*</label>
+                                            <input class="form-control input-md" name="trackingNumber" type="text">
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class='col-12 col-sm-6'>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="orderNumber">Product
+                                                Category*</label>
+                                            <input class="form-control input-md" name="orderNumber" type="text">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class='col-12 col-sm-6'>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="trackingNumber">Service
+                                                code*</label>
+                                            <input class="form-control input-md" name="trackingNumber" type="text">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class='col-12 col-sm-6'>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="orderNumber">Value*</label>
+                                            <input class="form-control input-md" name="orderNumber" type="text">
+                                           
+                                        </div>
+                                    </div>
+                                    <div class='col-12 col-sm-6'>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="trackingNumber">Currency*</label>
+                                            <input class="form-control input-md" name="trackingNumber" type="text">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class='col-12 col-sm-6'>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="orderNumber">Item Count*</label>
+                                            <input class="form-control input-md" name="orderNumber" type="text">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Loop -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card data ends -->
+        </div>
+        <div class="col-12">
+            <!-- Card data starts -->
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-body">
+                        <div class="row align-items-center mb-3">
+                            <div class="col-sm-8">
+                                <h5 class="text-primary mb-0">Package Details</h5>
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-sm-12'>
+                                <div class="row">
+                                    <div class='col-12 col-sm-6'>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="orderNumber">Package Weight (in lbs)</label>
+                                            <input class="form-control input-md" name="orderNumber" type="text">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class='col-12 col-sm-6'>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="trackingNumber">Package Height (In Inches )</label>
+                                            <input class="form-control input-md" name="trackingNumber" type="text">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class='col-12 col-sm-6'>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="orderNumber">Package width (In Inches )</label>
+                                            <input class="form-control input-md" name="orderNumber" type="text">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class='col-12 col-sm-6'>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="trackingNumber">Package Length (In Inches )</label>
+                                            <input class="form-control input-md" name="trackingNumber" type="text">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card data ends -->
+        </div>
+        <div class="col-sm-12 text-sm-right mt-3">
+            <button class="btn btn-secondary custom mr-1">Cancel</button>
+            <button class="btn btn-primary custom" routerLink="/manage-shipment/csv-detail-view">Save Changes</button>
+        </div>
+    </div>
+</section>

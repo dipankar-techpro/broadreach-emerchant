@@ -15,8 +15,9 @@ import { TrackShipmentComponent } from './track-shipment/track-shipment.componen
 import { ManualComponent } from './manual/manual.component';
 import { ImportCsvComponent } from './import-csv/import-csv.component';
 import { ShipmentDetailComponent } from './shipment-detail/shipment-detail.component';
-import { ImportCsvViewComponent } from './import-csv-view/import-csv-view.component';
 import { ShipmentEditComponent } from './shipment-edit/shipment-edit.component';
+import { CsvEditComponent } from './csv-edit/csv-edit.component';
+import { CsvDetailViewComponent } from './csv-detail-view/csv-detail-view.component';
 
 
 
@@ -28,8 +29,9 @@ import { ShipmentEditComponent } from './shipment-edit/shipment-edit.component';
     ManualComponent,
     ImportCsvComponent,
     ShipmentDetailComponent,
-    ImportCsvViewComponent,
     ShipmentEditComponent,
+    CsvEditComponent,
+    CsvDetailViewComponent,
   ],
   imports: [
     CommonModule,

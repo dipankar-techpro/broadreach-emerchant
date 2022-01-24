@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ImportCsvViewComponent } from './import-csv-view/import-csv-view.component';
+import { CsvDetailViewComponent } from './csv-detail-view/csv-detail-view.component';
+import { CsvEditComponent } from './csv-edit/csv-edit.component';
 import { ImportCsvComponent } from './import-csv/import-csv.component';
 import { ManualComponent } from './manual/manual.component';
 import { ShipmentDetailComponent } from './shipment-detail/shipment-detail.component';
@@ -32,17 +33,24 @@ const routes: Routes = [
         }
       },
       {
-        path: 'import-csv-view',
-        component: ImportCsvViewComponent,
-        data: {
-          title: 'Import CSV'
-        }
-      },
-      {
         path: 'edit-shipment',
         component: ShipmentEditComponent,
         data: {
           title: 'Edit Shipment'
+        }
+      },
+      {
+        path: 'csv-edit',
+        component: CsvEditComponent,
+        data: {
+          title: 'Edit Shipment by CSV'
+        }
+      },
+      {
+        path: 'csv-detail-view',
+        component: CsvDetailViewComponent,
+        data: {
+          title: 'Shipment Detail'
         }
       },
     ]

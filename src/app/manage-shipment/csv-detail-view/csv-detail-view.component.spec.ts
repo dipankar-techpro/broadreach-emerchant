@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ImportCsvViewComponent } from './import-csv-view.component';
+import { CsvDetailViewComponent } from './csv-detail-view.component';
 
-describe('ImportCsvViewComponent', () => {
-  let component: ImportCsvViewComponent;
-  let fixture: ComponentFixture<ImportCsvViewComponent>;
+describe('CsvDetailViewComponent', () => {
+  let component: CsvDetailViewComponent;
+  let fixture: ComponentFixture<CsvDetailViewComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ImportCsvViewComponent ]
+      declarations: [ CsvDetailViewComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ImportCsvViewComponent);
+    fixture = TestBed.createComponent(CsvDetailViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

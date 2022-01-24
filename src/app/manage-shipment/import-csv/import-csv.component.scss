@@ -22,15 +22,9 @@
     top: 0;
     bottom: 0;
   }
-  .sort-link{
-    display: flex;
-    align-items: center;
-}
+
 .sort-link i{
     padding: 7px;
-}
-.sort-link.sorted i{
-    transform: rotate(180deg);
 }
 .srch-div input{
     padding-left: 40px;
