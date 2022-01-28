@@ -1,0 +1,13 @@
+.track-btn{
+    width: 320px;
+}
+.timeline .timeline-item > .timeline-badge > span{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width:590px) {
+    .track-btn{
+        width: 100%;
+    }
+}

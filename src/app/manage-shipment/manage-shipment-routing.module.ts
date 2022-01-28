@@ -6,6 +6,8 @@ import { ImportCsvComponent } from './import-csv/import-csv.component';
 import { ManualComponent } from './manual/manual.component';
 import { ShipmentDetailComponent } from './shipment-detail/shipment-detail.component';
 import { ShipmentEditComponent } from './shipment-edit/shipment-edit.component';
+import { ShipmentHistoryComponent } from './shipment-history/shipment-history.component';
+import { TrackShipmentComponent } from './track-shipment/track-shipment.component';
 
 const routes: Routes = [
   {
@@ -51,6 +53,20 @@ const routes: Routes = [
         component: CsvDetailViewComponent,
         data: {
           title: 'Shipment Detail'
+        }
+      },
+      {
+        path: 'track-shipment',
+        component: TrackShipmentComponent,
+        data: {
+          title: 'Shipment Tracking'
+        }
+      },
+      {
+        path: 'shipment-history',
+        component: ShipmentHistoryComponent,
+        data: {
+          title: 'Shipment History'
         }
       },
     ]

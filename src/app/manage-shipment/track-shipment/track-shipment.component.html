@@ -1,1 +1,283 @@
-<p>track-shipment works!</p>
+<section class="track-shipment">
+    <!-- Media object starts -->
+    <div class="row">
+        <div class="col-12">
+            <div class="content-header mb-3">Track Shipment</div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <!-- Card data starts -->
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-body py-4">
+                        <div class="row align-items-center">
+                            <div class="col-sm-12">
+                                <p class="mb-3">Enter your consignment number here and track the current position of
+                                    your package.</p>
+                            </div>
+                            <div class="col-sm-9">
+
+                                <fieldset>
+                                    <div class="input-group mb-sm-0">
+
+                                        <input type="text" class="form-control" placeholder="Button on left">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary track-btn" type="button">Track</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="col-sm-3">
+                                <button class="btn btn-secondary btn-block">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <!-- Card data starts -->
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-sm-12">
+                                <h5 class="text-primary mb-3">Customer Order</h5>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-xl-4">
+                                <p>Order Number : <span>GAP123456</span> </p>
+                                <p>Origin : <span>New York</span></p>
+                                <p>Weight : <span>1.5 lbs</span></p>
+                            </div>
+                            <div class="col-12 col-xl-4">
+                                <p>Destination : <span>Torrento</span></p>
+                                <p>Created Date : <span>12/11/2021</span></p>
+                                <p>Created Time : <span>11:45 am</span></p>
+                            </div>
+                            <div class="col-12 col-xl-4 text-sm-right">
+                                <p>Original Tracking Number : <span>BR525614712</span></p>
+                                <p>Service Type : <span>Delivery</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-body">
+                        <div id="vertical-timeline-center"
+                            class="timeline-center timeline-wrapper col-sm-10 col-12 offset-sm-1">
+                            <ul class="timeline">
+                                <li class="timeline-line mt-4"></li>
+                                <li class="timeline-group">
+                                    <h5 class="mb-0"><span class="badge badge-primary cursor-default">11/19/2021</span></h5>
+                                </li>
+                            </ul>
+                            <ul class="timeline">
+                                <li class="timeline-line"></li>
+                                <li class="timeline-item">
+                                    <div class="timeline-badge">
+                                        <span class="bg-info " data-toggle="tooltip" placement="right"
+                                            ngbTooltip="Out For Delivery">
+                                            <img src="../../../assets/img/shipment/truck.png">
+                                        </span>
+                                    </div>
+                                    <div class="timeline-card card shadow">
+                                        
+                                        <div class="card-content">
+                                            <div class="card-body">
+                                                <h6 class="card-title font-small-3 text-primary">Status</h6>
+                                                    <h5 class="mb-0">Out for delivery</h5>
+                                                    <div class="row mt-4">
+                                                        <div class="col-sm-6">
+                                                            <h6 class="card-title font-small-3 text-primary"><i class="ft-clock mr-1"></i>TIME</h6>
+                                                            <h5 class="mb-0">05:45 AM</h5>
+                                                        </div>
+                                                        <div class="col-sm-6 text-right">
+                                                            <h6 class="card-title font-small-3 text-primary">Location<i class="ft-map-pin ml-1"></i></h6>
+                                                            <h5 class="mb-0">Toronto, ON</h5>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="timeline-item mt-5">
+                                    <div class="timeline-badge">
+                                        <span class="bg-info " data-toggle="tooltip" placement="right"
+                                            ngbTooltip="Out For Delivery">
+                                            <img src="../../../assets/img/shipment/box.png">
+                                        </span>
+                                    </div>
+                                    <div class="timeline-card card shadow">
+                                        
+                                        <div class="card-content">
+                                            <div class="card-body">
+                                                <h6 class="card-title font-small-3 text-primary">Status</h6>
+                                                    <h5 class="mb-0">Received in destination province</h5>
+                                                    <div class="row mt-4">
+                                                        <div class="col-sm-6">
+                                                            <h6 class="card-title font-small-3 text-primary"><i class="ft-clock mr-1"></i>TIME</h6>
+                                                            <h5 class="mb-0">07:13 PM</h5>
+                                                        </div>
+                                                        <div class="col-sm-6 text-right">
+                                                            <h6 class="card-title font-small-3 text-primary">Location<i class="ft-map-pin ml-1"></i></h6>
+                                                            <h5 class="mb-0">Toronto, ON</h5>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <!-- Last Week -->
+                            <ul class="timeline">
+                                <li class="timeline-line"></li>
+                                <li class="timeline-group">
+                                    <h5 class="mb-0"><span class="badge badge-primary cursor-default">11/18/2021</span></h5>
+                                </li>
+                            </ul>
+                            <ul class="timeline">
+                                <li class="timeline-line"></li>
+                                <li class="timeline-item">
+                                    <div class="timeline-badge">
+                                        <span class="bg-info " data-toggle="tooltip" placement="right"
+                                            ngbTooltip="Out For Delivery">
+                                            <img src="../../../assets/img/shipment/truck.png">
+                                        </span>
+                                    </div>
+                                    <div class="timeline-card card shadow">
+                                        
+                                        <div class="card-content">
+                                            <div class="card-body">
+                                                <h6 class="card-title font-small-3 text-primary">Status</h6>
+                                                    <h5 class="mb-0">In transit to destination province</h5>
+                                                    <div class="row mt-4">
+                                                        <div class="col-sm-6">
+                                                            <h6 class="card-title font-small-3 text-primary"><i class="ft-clock mr-1"></i>TIME</h6>
+                                                            <h5 class="mb-0">05:45 AM</h5>
+                                                        </div>
+                                                        <div class="col-sm-6 text-right">
+                                                            <h6 class="card-title font-small-3 text-primary">Location<i class="ft-map-pin ml-1"></i></h6>
+                                                            <h5 class="mb-0">Calgary, AB</h5>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                
+                            </ul>
+
+
+                            <!-- 2016 -->
+                            <ul class="timeline">
+                                <li class="timeline-line"></li>
+                                <li class="timeline-group">
+                                    <h5 class="mb-0"><span class="badge badge-primary cursor-default">11/17/2021</span></h5>
+                                </li>
+                            </ul>
+                            <ul class="timeline">
+                                <li class="timeline-item">
+                                    <div class="timeline-badge">
+                                        <span class="bg-info " data-toggle="tooltip" placement="right"
+                                            ngbTooltip="Out For Delivery">
+                                            <img src="../../../assets/img/shipment/box.png">
+                                        </span>
+                                    </div>
+                                    <div class="timeline-card card shadow">
+                                        
+                                        <div class="card-content">
+                                            <div class="card-body">
+                                                <h6 class="card-title font-small-3 text-primary">Status</h6>
+                                                    <h5 class="mb-0">Received cross-dock</h5>
+                                                    <div class="row mt-4">
+                                                        <div class="col-sm-6">
+                                                            <h6 class="card-title font-small-3 text-primary"><i class="ft-clock mr-1"></i>TIME</h6>
+                                                            <h5 class="mb-0">05:45 AM</h5>
+                                                        </div>
+                                                        <div class="col-sm-6 text-right">
+                                                            <h6 class="card-title font-small-3 text-primary">Location<i class="ft-map-pin ml-1"></i></h6>
+                                                            <h5 class="mb-0">Calgary, AB</h5>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+
+                                <li class="timeline-item mt-5">
+                                    <div class="timeline-badge">
+                                        <span class="bg-info " data-toggle="tooltip" placement="right"
+                                            ngbTooltip="Out For Delivery">
+                                            <img src="../../../assets/img/shipment/truck.png">
+                                        </span>
+                                    </div>
+                                    <div class="timeline-card card shadow">
+                                        
+                                        <div class="card-content">
+                                            <div class="card-body">
+                                                <h6 class="card-title font-small-3 text-primary">Status</h6>
+                                                    <h5 class="mb-0">Customs released</h5>
+                                                    <div class="row mt-4">
+                                                        <div class="col-sm-6">
+                                                            <h6 class="card-title font-small-3 text-primary"><i class="ft-clock mr-1"></i>TIME</h6>
+                                                            <h5 class="mb-0">05:45 AM</h5>
+                                                        </div>
+                                                        <div class="col-sm-6 text-right">
+                                                            <h6 class="card-title font-small-3 text-primary">Location<i class="ft-map-pin ml-1"></i></h6>
+                                                            <h5 class="mb-0">Toronto, ON</h5>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="timeline-item">
+                                    <div class="timeline-badge">
+                                        <span class="bg-info " data-toggle="tooltip" placement="right"
+                                        ngbTooltip="Out For Delivery">
+                                        <img src="../../../assets/img/shipment/tick.png">
+                                    </span>
+                                    </div>
+                                    <div class="timeline-card card shadow">
+                                        
+                                        <div class="card-content">
+                                            <div class="card-body">
+                                                <h6 class="card-title font-small-3 text-primary">Status</h6>
+                                                    <h5 class="mb-0">Customs verification</h5>
+                                                    <div class="row mt-4">
+                                                        <div class="col-sm-6">
+                                                            <h6 class="card-title font-small-3 text-primary"><i class="ft-clock mr-1"></i>TIME</h6>
+                                                            <h5 class="mb-0">05:45 AM</h5>
+                                                        </div>
+                                                        <div class="col-sm-6 text-right">
+                                                            <h6 class="card-title font-small-3 text-primary">Location<i class="ft-map-pin ml-1"></i></h6>
+                                                            <h5 class="mb-0">Toronto, ON</h5>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-line"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
